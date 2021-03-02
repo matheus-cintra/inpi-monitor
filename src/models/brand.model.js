@@ -1,4 +1,4 @@
-const mongoose = require('../../config/database/database');
+const mongoose = require('mongoose');
 
 const BrandSchema = new mongoose.Schema(
   {
