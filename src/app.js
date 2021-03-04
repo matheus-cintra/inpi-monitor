@@ -17,6 +17,8 @@ const cron = require('node-cron');
     },
   };
 
+  console.warn('Cron Inicia Toda Terça...');
+
   cron.schedule('* 0 * * TUE', async () => {
     console.warn('Rodando Cron...');
     await methods.update(config);
