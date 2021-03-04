@@ -18,7 +18,7 @@ const cron = require('node-cron');
   };
 
   cron.schedule('* 0 * * TUE', async () => {
-    console.warn('DENTRO DA CRON');
+    console.warn('Rodando Cron...');
     await methods.update(config);
   });
 })();
